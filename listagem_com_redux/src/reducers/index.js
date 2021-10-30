@@ -1,0 +1,25 @@
+const pessoasReducer = () => {
+    return [
+        {
+            nome: 'Cristina', sobrenome: 'Silva', endereco: 'Rua A, 34'
+        },
+        {
+            nome: 'Joao', sobrenome: 'Alves', endereco: 'Rua B, 43'
+        },
+        {
+            nome: 'Pedro', sobrenome: 'Mendes', endereco: 'Rua D, 200'
+        },
+    ]
+}
+
+const pessoaSelecionadaReducer = () => {
+    if(acao.type === "PESSOA_SELECIONADA"){
+        return acao.payload.pessoa
+    }
+    return pessoaSelecionada
+}
+
+export default combineReducers({
+    pessoas: pessoasReducer,
+    pessoaSelecionada: pessoaSelecionadaReducer
+})
