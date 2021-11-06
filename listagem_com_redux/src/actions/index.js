@@ -1,4 +1,4 @@
-export default selecionarPessoa = (pessoa) => {
+export const selecionarPessoa = (pessoa) => {
     return{
         type: 'PESSOA_SELECIONADA',
         payload: {

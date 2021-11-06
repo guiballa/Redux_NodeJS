@@ -8,11 +8,9 @@ import 'primeflex/primeflex.css'
 // https://primefaces.org/primereact/showcase/#/setup
 //escolhemos esse aqui
 import 'primereact/resources/themes/bootstrap4-light-purple/theme.css'
+import { createStore } from 'redux'
 import reducers from './reducers'
-import {createStore} from './redux'
 import { Provider } from 'react-redux'
-
-
 const store = createStore (reducers)
 
 ReactDOM.render(
